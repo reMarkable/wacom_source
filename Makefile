@@ -12,6 +12,6 @@ $(PROGNAME): $(WACOMTOOLSRC)
 clean:
 	rm -f $(WACOMTOOLOBJ) $(PROGNAME)
 
-install:
-	install -d /usr/bin/
-	install -m 755 wacom_flash /usr/bin/
+install: $(PROGNAME)
+	install -d $(DESTDIR)/usr/bin/
+	install -m 755 wacom_flash $(DESTDIR)/usr/bin/
