@@ -1,0 +1,35 @@
+root@remarkable:~# ./wacom_flash -v i2c-0
+Opening a device file /dev/i2c-0 
+******************************
+
+Current firmware vesrsion:
+ 0x730
+******************************
+root@remarkable:~# ./wacom_flash W9021_0731.hex i2c-0
+Hex file name: W9021_0731.hex 
+File size : 737430 
+Reading hex-file is succeeded
+Opening a device file /dev/i2c-0 
+******************************
+
+Current firmware vesrsion:
+ 0x730
+******************************
+
+ 1 st attempt
+BL version: 3 
+MPU type: 45 
+wacom_i2c_flash_w9021 erasing the current firmware 
+wacom_i2c_flash_w9021 writing new firmware 
+wacom_i2c_flash_w9021 write and verify completed 
+wacom_i2c_flash closing the boot mode 
+get_hid_desc failed to send messages
+Failed to get hid descriptor
+root@remarkable:~# ./wacom_flash -v i2c-0
+Opening a device file /dev/i2c-0 
+******************************
+
+Current firmware vesrsion:
+ 0x731
+******************************
+root@remarkable:~#
